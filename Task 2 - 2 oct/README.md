@@ -1,5 +1,8 @@
-Task 2 - 2 oct
-Main.java
+# Task 2 - 2 Oct
+
+### Main.java
+
+```java
 class Student {
     static int count = 0;
 
@@ -17,10 +20,13 @@ public class Main {
         System.out.println(Student.count);
     }
 }
-ThreadMain.java
+```
+
+### ThreadMain.java
+
+```java
 public class ThreadMain {
     public static void main(String[] args) {
-
         CookingTask task1 = new CookingTask("Cooking");
         CookingTask task2 = new CookingTask("Washing");
         CookingTask task3 = new CookingTask("Cleaning");
@@ -34,7 +40,6 @@ public class ThreadMain {
 }
 
 class CookingTask extends Thread {
-
     private String taskName;
 
     public CookingTask(String taskName) {
@@ -43,16 +48,13 @@ class CookingTask extends Thread {
 
     @Override
     public void run() {
-
         long startTime = System.currentTimeMillis();
 
         while (true) {
-
             System.out.println(
                     Thread.currentThread().getName()
                     + " - Running: " + taskName
             );
-
 
             try {
                 Thread.sleep(1000);
@@ -60,6 +62,7 @@ class CookingTask extends Thread {
                 System.out.println(taskName + " interrupted.");
                 break;
             }
+
             if (System.currentTimeMillis() - startTime >= 10_000) {
                 break;
             }
@@ -68,8 +71,13 @@ class CookingTask extends Thread {
         System.out.println(taskName + " finished.");
     }
 }
+```
 
-Output of ThreadMain.java
+### Output of ThreadMain.java
+
+The output order may vary because the threads run concurrently.
+
+```text
 All tasks started...
 Thread-2 - Running: Cleaning
 Thread-1 - Running: Washing
@@ -104,3 +112,4 @@ Thread-2 - Running: Cleaning
 Cooking finished.
 Cleaning finished.
 Washing finished.
+```
