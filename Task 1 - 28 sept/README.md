@@ -1,6 +1,8 @@
-Task 1 - 28 Sept
-MainCount.java
+# Task 1 - 28 Sept
 
+### MainCount.java
+
+```java
 class Count {
     static int count = 0;
 
@@ -19,7 +21,11 @@ public class MainCount {
         System.out.println("Final count: " + Count.count);
     }
 }
-Main.java (Cooking Class)
+```
+
+### Main.java (Cooking Class)
+
+```java
 class CookingTask extends Thread {
     public void run() {
         System.out.println("This is a cooking task.");
@@ -31,8 +37,10 @@ public class Main {
         CookingTask t1 = new CookingTask();
         CookingTask t2 = new CookingTask();
         CookingTask t3 = new CookingTask();
+
         t1.start();
         t2.start();
         t3.start();
     }
 }
+```
