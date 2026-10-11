@@ -1,0 +1,392 @@
+=================== N=1  K=1000 ===================
+--- Experiment A (true) ---
+Mode               : true (AtomicLong, thread-safe)
+Threads (N)        : 1
+Increments (K)     : 1000
+Expected (E = N*K) : 1000
+Static count (S)   : 1000
+Non-static (I)     : 1000
+Abs difference (D) : 0
+Difference (P)     : 0.0000%
+--- Experiment B (false) Run 1 ---
+Mode               : false (long, unsynchronized)
+Threads (N)        : 1
+Increments (K)     : 1000
+Expected (E = N*K) : 1000
+Static count (S)   : 1000
+Non-static (I)     : 1000
+Abs difference (D) : 0
+Difference (P)     : 0.0000%
+--- Experiment B (false) Run 2 ---
+Mode               : false (long, unsynchronized)
+Threads (N)        : 1
+Increments (K)     : 1000
+Expected (E = N*K) : 1000
+Static count (S)   : 1000
+Non-static (I)     : 1000
+Abs difference (D) : 0
+Difference (P)     : 0.0000%
+--- Experiment B (false) Run 3 ---
+Mode               : false (long, unsynchronized)
+Threads (N)        : 1
+Increments (K)     : 1000
+Expected (E = N*K) : 1000
+Static count (S)   : 1000
+Non-static (I)     : 1000
+Abs difference (D) : 0
+Difference (P)     : 0.0000%
+--- Experiment B (false) Run 4 ---
+Mode               : false (long, unsynchronized)
+Threads (N)        : 1
+Increments (K)     : 1000
+Expected (E = N*K) : 1000
+Static count (S)   : 1000
+Non-static (I)     : 1000
+Abs difference (D) : 0
+Difference (P)     : 0.0000%
+--- Experiment B (false) Run 5 ---
+Mode               : false (long, unsynchronized)
+Threads (N)        : 1
+Increments (K)     : 1000
+Expected (E = N*K) : 1000
+Static count (S)   : 1000
+Non-static (I)     : 1000
+Abs difference (D) : 0
+Difference (P)     : 0.0000%
+
+=================== N=2  K=10000 ===================
+--- Experiment A (true) ---
+Mode               : true (AtomicLong, thread-safe)
+Threads (N)        : 2
+Increments (K)     : 10000
+Expected (E = N*K) : 20000
+Static count (S)   : 20000
+Non-static (I)     : 20000
+Abs difference (D) : 0
+Difference (P)     : 0.0000%
+--- Experiment B (false) Run 1 ---
+Mode               : false (long, unsynchronized)
+Threads (N)        : 2
+Increments (K)     : 10000
+Expected (E = N*K) : 20000
+Static count (S)   : 16971
+Non-static (I)     : 20000
+Abs difference (D) : 3029
+Difference (P)     : 15.1450%
+--- Experiment B (false) Run 2 ---
+Mode               : false (long, unsynchronized)
+Threads (N)        : 2
+Increments (K)     : 10000
+Expected (E = N*K) : 20000
+Static count (S)   : 16756
+Non-static (I)     : 20000
+Abs difference (D) : 3244
+Difference (P)     : 16.2200%
+--- Experiment B (false) Run 3 ---
+Mode               : false (long, unsynchronized)
+Threads (N)        : 2
+Increments (K)     : 10000
+Expected (E = N*K) : 20000
+Static count (S)   : 18646
+Non-static (I)     : 20000
+Abs difference (D) : 1354
+Difference (P)     : 6.7700%
+--- Experiment B (false) Run 4 ---
+Mode               : false (long, unsynchronized)
+Threads (N)        : 2
+Increments (K)     : 10000
+Expected (E = N*K) : 20000
+Static count (S)   : 17183
+Non-static (I)     : 20000
+Abs difference (D) : 2817
+Difference (P)     : 14.0850%
+--- Experiment B (false) Run 5 ---
+Mode               : false (long, unsynchronized)
+Threads (N)        : 2
+Increments (K)     : 10000
+Expected (E = N*K) : 20000
+Static count (S)   : 14686
+Non-static (I)     : 20000
+Abs difference (D) : 5314
+Difference (P)     : 26.5700%
+
+=================== N=5  K=10000 ===================
+--- Experiment A (true) ---
+Mode               : true (AtomicLong, thread-safe)
+Threads (N)        : 5
+Increments (K)     : 10000
+Expected (E = N*K) : 50000
+Static count (S)   : 50000
+Non-static (I)     : 50000
+Abs difference (D) : 0
+Difference (P)     : 0.0000%
+--- Experiment B (false) Run 1 ---
+Mode               : false (long, unsynchronized)
+Threads (N)        : 5
+Increments (K)     : 10000
+Expected (E = N*K) : 50000
+Static count (S)   : 20907
+Non-static (I)     : 50000
+Abs difference (D) : 29093
+Difference (P)     : 58.1860%
+--- Experiment B (false) Run 2 ---
+Mode               : false (long, unsynchronized)
+Threads (N)        : 5
+Increments (K)     : 10000
+Expected (E = N*K) : 50000
+Static count (S)   : 19194
+Non-static (I)     : 50000
+Abs difference (D) : 30806
+Difference (P)     : 61.6120%
+--- Experiment B (false) Run 3 ---
+Mode               : false (long, unsynchronized)
+Threads (N)        : 5
+Increments (K)     : 10000
+Expected (E = N*K) : 50000
+Static count (S)   : 15313
+Non-static (I)     : 50000
+Abs difference (D) : 34687
+Difference (P)     : 69.3740%
+--- Experiment B (false) Run 4 ---
+Mode               : false (long, unsynchronized)
+Threads (N)        : 5
+Increments (K)     : 10000
+Expected (E = N*K) : 50000
+Static count (S)   : 18152
+Non-static (I)     : 50000
+Abs difference (D) : 31848
+Difference (P)     : 63.6960%
+--- Experiment B (false) Run 5 ---
+Mode               : false (long, unsynchronized)
+Threads (N)        : 5
+Increments (K)     : 10000
+Expected (E = N*K) : 50000
+Static count (S)   : 20682
+Non-static (I)     : 50000
+Abs difference (D) : 29318
+Difference (P)     : 58.6360%
+
+=================== N=10  K=50000 ===================
+--- Experiment A (true) ---
+Mode               : true (AtomicLong, thread-safe)
+Threads (N)        : 10
+Increments (K)     : 50000
+Expected (E = N*K) : 500000
+Static count (S)   : 500000
+Non-static (I)     : 500000
+Abs difference (D) : 0
+Difference (P)     : 0.0000%
+--- Experiment B (false) Run 1 ---
+Mode               : false (long, unsynchronized)
+Threads (N)        : 10
+Increments (K)     : 50000
+Expected (E = N*K) : 500000
+Static count (S)   : 71833
+Non-static (I)     : 500000
+Abs difference (D) : 428167
+Difference (P)     : 85.6334%
+--- Experiment B (false) Run 2 ---
+Mode               : false (long, unsynchronized)
+Threads (N)        : 10
+Increments (K)     : 50000
+Expected (E = N*K) : 500000
+Static count (S)   : 81617
+Non-static (I)     : 500000
+Abs difference (D) : 418383
+Difference (P)     : 83.6766%
+--- Experiment B (false) Run 3 ---
+Mode               : false (long, unsynchronized)
+Threads (N)        : 10
+Increments (K)     : 50000
+Expected (E = N*K) : 500000
+Static count (S)   : 68011
+Non-static (I)     : 500000
+Abs difference (D) : 431989
+Difference (P)     : 86.3978%
+--- Experiment B (false) Run 4 ---
+Mode               : false (long, unsynchronized)
+Threads (N)        : 10
+Increments (K)     : 50000
+Expected (E = N*K) : 500000
+Static count (S)   : 68515
+Non-static (I)     : 500000
+Abs difference (D) : 431485
+Difference (P)     : 86.2970%
+--- Experiment B (false) Run 5 ---
+Mode               : false (long, unsynchronized)
+Threads (N)        : 10
+Increments (K)     : 50000
+Expected (E = N*K) : 500000
+Static count (S)   : 72578
+Non-static (I)     : 500000
+Abs difference (D) : 427422
+Difference (P)     : 85.4844%
+
+=================== N=20  K=50000 ===================
+--- Experiment A (true) ---
+Mode               : true (AtomicLong, thread-safe)
+Threads (N)        : 20
+Increments (K)     : 50000
+Expected (E = N*K) : 1000000
+Static count (S)   : 1000000
+Non-static (I)     : 1000000
+Abs difference (D) : 0
+Difference (P)     : 0.0000%
+--- Experiment B (false) Run 1 ---
+Mode               : false (long, unsynchronized)
+Threads (N)        : 20
+Increments (K)     : 50000
+Expected (E = N*K) : 1000000
+Static count (S)   : 153777
+Non-static (I)     : 1000000
+Abs difference (D) : 846223
+Difference (P)     : 84.6223%
+--- Experiment B (false) Run 2 ---
+Mode               : false (long, unsynchronized)
+Threads (N)        : 20
+Increments (K)     : 50000
+Expected (E = N*K) : 1000000
+Static count (S)   : 168596
+Non-static (I)     : 1000000
+Abs difference (D) : 831404
+Difference (P)     : 83.1404%
+--- Experiment B (false) Run 3 ---
+Mode               : false (long, unsynchronized)
+Threads (N)        : 20
+Increments (K)     : 50000
+Expected (E = N*K) : 1000000
+Static count (S)   : 141009
+Non-static (I)     : 1000000
+Abs difference (D) : 858991
+Difference (P)     : 85.8991%
+--- Experiment B (false) Run 4 ---
+Mode               : false (long, unsynchronized)
+Threads (N)        : 20
+Increments (K)     : 50000
+Expected (E = N*K) : 1000000
+Static count (S)   : 90331
+Non-static (I)     : 1000000
+Abs difference (D) : 909669
+Difference (P)     : 90.9669%
+--- Experiment B (false) Run 5 ---
+Mode               : false (long, unsynchronized)
+Threads (N)        : 20
+Increments (K)     : 50000
+Expected (E = N*K) : 1000000
+Static count (S)   : 159176
+Non-static (I)     : 1000000
+Abs difference (D) : 840824
+Difference (P)     : 84.0824%
+
+=================== N=50  K=50000 ===================
+--- Experiment A (true) ---
+Mode               : true (AtomicLong, thread-safe)
+Threads (N)        : 50
+Increments (K)     : 50000
+Expected (E = N*K) : 2500000
+Static count (S)   : 2500000
+Non-static (I)     : 2500000
+Abs difference (D) : 0
+Difference (P)     : 0.0000%
+--- Experiment B (false) Run 1 ---
+Mode               : false (long, unsynchronized)
+Threads (N)        : 50
+Increments (K)     : 50000
+Expected (E = N*K) : 2500000
+Static count (S)   : 705230
+Non-static (I)     : 2500000
+Abs difference (D) : 1794770
+Difference (P)     : 71.7908%
+--- Experiment B (false) Run 2 ---
+Mode               : false (long, unsynchronized)
+Threads (N)        : 50
+Increments (K)     : 50000
+Expected (E = N*K) : 2500000
+Static count (S)   : 918087
+Non-static (I)     : 2500000
+Abs difference (D) : 1581913
+Difference (P)     : 63.2765%
+--- Experiment B (false) Run 3 ---
+Mode               : false (long, unsynchronized)
+Threads (N)        : 50
+Increments (K)     : 50000
+Expected (E = N*K) : 2500000
+Static count (S)   : 466348
+Non-static (I)     : 2500000
+Abs difference (D) : 2033652
+Difference (P)     : 81.3461%
+--- Experiment B (false) Run 4 ---
+Mode               : false (long, unsynchronized)
+Threads (N)        : 50
+Increments (K)     : 50000
+Expected (E = N*K) : 2500000
+Static count (S)   : 515668
+Non-static (I)     : 2500000
+Abs difference (D) : 1984332
+Difference (P)     : 79.3733%
+--- Experiment B (false) Run 5 ---
+Mode               : false (long, unsynchronized)
+Threads (N)        : 50
+Increments (K)     : 50000
+Expected (E = N*K) : 2500000
+Static count (S)   : 950834
+Non-static (I)     : 2500000
+Abs difference (D) : 1549166
+Difference (P)     : 61.9666%
+
+=================== N=100  K=50000 ===================
+--- Experiment A (true) ---
+Mode               : true (AtomicLong, thread-safe)
+Threads (N)        : 100
+Increments (K)     : 50000
+Expected (E = N*K) : 5000000
+Static count (S)   : 5000000
+Non-static (I)     : 5000000
+Abs difference (D) : 0
+Difference (P)     : 0.0000%
+--- Experiment B (false) Run 1 ---
+Mode               : false (long, unsynchronized)
+Threads (N)        : 100
+Increments (K)     : 50000
+Expected (E = N*K) : 5000000
+Static count (S)   : 2855537
+Non-static (I)     : 5000000
+Abs difference (D) : 2144463
+Difference (P)     : 42.8893%
+--- Experiment B (false) Run 2 ---
+Mode               : false (long, unsynchronized)
+Threads (N)        : 100
+Increments (K)     : 50000
+Expected (E = N*K) : 5000000
+Static count (S)   : 3032145
+Non-static (I)     : 5000000
+Abs difference (D) : 1967855
+Difference (P)     : 39.3571%
+--- Experiment B (false) Run 3 ---
+Mode               : false (long, unsynchronized)
+Threads (N)        : 100
+Increments (K)     : 50000
+Expected (E = N*K) : 5000000
+Static count (S)   : 1791964
+Non-static (I)     : 5000000
+Abs difference (D) : 3208036
+Difference (P)     : 64.1607%
+--- Experiment B (false) Run 4 ---
+Mode               : false (long, unsynchronized)
+Threads (N)        : 100
+Increments (K)     : 50000
+Expected (E = N*K) : 5000000
+Static count (S)   : 1910899
+Non-static (I)     : 5000000
+Abs difference (D) : 3089101
+Difference (P)     : 61.7820%
+--- Experiment B (false) Run 5 ---
+Mode               : false (long, unsynchronized)
+Threads (N)        : 100
+Increments (K)     : 50000
+Expected (E = N*K) : 5000000
+Static count (S)   : 3328159
+Non-static (I)     : 5000000
+Abs difference (D) : 1671841
+Difference (P)     : 33.4368%
+
